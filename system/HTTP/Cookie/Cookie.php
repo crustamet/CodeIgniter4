@@ -347,7 +347,7 @@ class Cookie implements ArrayAccess, CloneableCookieInterface
 				return rawurlencode($char);
 			}, $search);
 
-			$name .= str_replace($search, $replace, $this->getName());
+			$name = str_replace($search, $replace, $this->getName());
 		}
 
 		return $name;
